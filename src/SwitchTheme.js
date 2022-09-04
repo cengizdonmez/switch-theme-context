@@ -10,12 +10,12 @@ export default function SwitchTheme() {
       <button
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
         type="button"
-        class="mx-auto inline-flex items-center rounded-full border border-transparent bg-indigo-600 p-3 text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+        className="mx-auto inline-flex items-center rounded-full border border-transparent bg-indigo-600 p-3 shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
         <span>
           {theme === "dark" ? (
-            <img className="h-10 w-10" src={SunIcon} alt="" />
+            <img className="h-12 w-12" src={SunIcon} alt="" />
           ) : (
-            <img className="h-10 w-10" src={MoonIcon} alt="" />
+            <img className="h-12 w-12" src={MoonIcon} alt="" />
           )}
         </span>
       </button>
